@@ -1,0 +1,57 @@
+:root{--pine:#12372f;--deep:#0b2420;--moss:#2f6b58;--mist:#e8f0ea;--sage:#cfe3d6;--gold:#f2b632;--ink:#1c2a26;--line:#bcd0c3}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,serif;background:var(--mist);color:var(--ink);line-height:1.6}
+h1,h2,h3,nav,button,.button,th{font-family:'Trebuchet MS',Arial,sans-serif}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+header{background:var(--pine);color:#fff;text-align:center;padding:30px 15px 0;border-bottom:5px solid var(--gold)}
+header p{margin-bottom:15px;color:var(--sage)}
+nav{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;background:var(--deep);margin:0 -15px;padding:10px}
+nav a{color:#fff;text-decoration:none;font-weight:bold;padding:6px 16px;border-radius:99px}
+nav a:hover{background:var(--gold);color:var(--deep)}
+main{max-width:1100px;margin:auto;padding:30px 15px}
+section{background:#fff;margin-bottom:25px;padding:25px;border-left:8px solid var(--moss);border-radius:4px 24px 4px 24px}
+section h2{color:var(--pine);margin-bottom:15px}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:30px;background:var(--sage);border-left-color:var(--gold)}
+.hero-text{flex:1}
+.hero-text h2{font-size:34px}
+.hero-image{flex:1;text-align:center}
+.hero-image img{width:100%;max-width:280px;height:auto;border-radius:140px 140px 12px 12px;border:5px solid #fff;box-shadow:8px 8px 0 var(--moss)}
+article{font-weight:bold}
+.button,.back-button,.certificate-button,button{display:inline-block;background:var(--pine);color:#fff;padding:10px 22px;border:none;border-radius:99px;text-decoration:none;font-weight:bold;cursor:pointer;font-size:15px}
+.button,.back-button{margin-top:15px}
+.button:hover,.back-button:hover,.certificate-button:hover,button:hover{background:var(--gold);color:var(--deep)}
+.about aside{background:var(--mist);padding:15px;margin-top:15px;border-left:4px solid var(--gold)}
+.about ul{margin-left:20px}
+.skill-box{display:flex;flex-wrap:wrap;gap:12px}
+.skill-box div{background:var(--sage);color:var(--pine);padding:10px 22px;border-radius:99px;font-weight:bold}
+.video-section video{display:block;max-width:100%;width:700px;margin:15px auto 0;border-radius:10px}
+.projects-section{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.projects-section h2{grid-column:1/-1}
+.project-card,.certificate-card{padding:18px;border:2px solid var(--line);border-top:6px solid var(--moss);border-radius:4px 16px 4px 16px;background:#fff}
+.project-detail{background:#fff;max-width:800px;margin:40px auto;padding:30px;border-left:8px solid var(--gold);border-radius:4px 24px 4px 24px}
+.project-detail img{width:100%;max-height:350px;object-fit:cover;border-radius:8px}
+.project-detail h2{margin-top:20px}
+.project-detail h3{color:var(--moss);margin-top:20px}
+.project-detail li{margin:8px 0}
+.certificate-section{text-align:center}
+.certificate-container{display:flex;justify-content:center;gap:25px;flex-wrap:wrap}
+.certificate-card{width:300px;border-top-color:var(--line);border-bottom:6px solid var(--gold)}
+.certificate-icon{font-size:45px}
+.certificate-card h3{color:var(--pine);margin:8px 0 12px}
+.table-container{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{border:1px solid var(--line);padding:12px;text-align:left}
+th{background:var(--pine);color:#fff}
+tr:nth-child(even){background:var(--mist)}
+.links-section a{color:var(--moss);font-weight:bold}
+.contact-section{max-width:700px;margin:auto}
+form{display:flex;flex-direction:column;gap:10px}
+input,select,textarea{width:100%;padding:10px;border:2px solid var(--line);border-radius:8px;font-family:inherit;font-size:15px}
+input:focus,select:focus,textarea:focus{border-color:var(--moss);outline:none}
+fieldset{border:2px solid var(--line);padding:15px;border-radius:8px}
+fieldset label{display:inline-block;margin-right:15px}
+fieldset input{width:auto;margin-right:5px}
+textarea{resize:vertical}
+.form-buttons{display:flex;gap:10px;margin-top:10px}
+footer{background:var(--pine);color:var(--sage);text-align:center;padding:20px;margin-top:20px;border-top:5px solid var(--gold)}
+@media(max-width:768px){.hero{flex-direction:column-reverse;text-align:center}.hero-text h2{font-size:26px}.projects-section{grid-template-columns:1fr}.project-card img{height:auto;max-height:250px}section{padding:18px}}
